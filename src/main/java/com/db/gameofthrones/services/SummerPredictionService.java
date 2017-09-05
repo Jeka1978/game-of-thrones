@@ -1,5 +1,6 @@
 package com.db.gameofthrones.services;
 
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Profile("DEV")
+@Conditional(OnSummerCondition.class)
 public class SummerPredictionService implements PredictionService {
     @Override
     public boolean датьДеньги(Client client) {

@@ -25,8 +25,18 @@
 	</properties>
 
 	<dependencies>
+
 		<dependency>
-			<groupId>com.db</groupId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.example</groupId>
 			<artifactId>demo-starter</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
